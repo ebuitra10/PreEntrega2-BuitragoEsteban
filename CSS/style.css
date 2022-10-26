@@ -238,7 +238,8 @@ div img {
     .logo {
         width: 125px;
         height: 220px;
-        padding-left: 110px;
+        padding-left: 125px;
+        
     }
     
     nav {
@@ -262,7 +263,23 @@ div img {
     .tarjetas {
         display: none;
     }
-    
+
+    .fondoCaja{
+        width: 98% ;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin: 1.5% 0%;
+        padding: 1% 1%;
+    }
+   
+
+    .boxDerecha{
+        display: none;
+
+    }
 
     
 }
@@ -374,9 +391,7 @@ animation: carrusel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
 
 /* carrusel version movil*/
 
-.carruselmovil{
-    ;
-}
+
 
 .carousel {
     margin-left: 15%;
@@ -508,7 +523,6 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 
 input:checked + .slide-container .nav label { display: block; }
 
-.carruselmovil{
-    display:;
-}
+
+
 
