@@ -227,7 +227,7 @@ div img {
     flex-direction: column;
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 414px){
     
     .navegacion {
         display: flex;
@@ -267,7 +267,7 @@ div img {
     
 }
 
-@media screen and (min-width: 391px ) {
+@media screen and (min-width: 415px ) {
     .carruselmovil{
         display: none;
     }
