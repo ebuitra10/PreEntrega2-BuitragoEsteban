@@ -178,13 +178,13 @@ div img {
 .estructurap{
     display: grid;
     grid-template-columns: 0.3fr 0.3fr 0.3fr;
-    gap: 30px;
+    margin-left: 100px;
     justify-content: space-around;
     
 }
 
 .contenedorper{
-    width: 100%;
+    width: 80%;
     height: 82%;
     background-color: rgb(27, 24, 24, 0.8);
     padding: 5px;
@@ -410,10 +410,13 @@ div img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-right: 5px;
+        margin-left: 17px;
+        gap: 15px;
     }
     
     .contenedorper{
-        height: 290px;
+        height: 300px;
+        width: 180px;
     }
 
 
