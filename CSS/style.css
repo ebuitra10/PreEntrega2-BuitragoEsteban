@@ -108,14 +108,14 @@ ul{
     list-style: none;
 }
 
-.body{
+body{
     background-image:linear-gradient(
         0deg,
         rgba(0,0,0,0.3),
         rgba(0,0,0,0.3)
     ) ,url(../imagenesSnk/Inicio/Fondo2.png);
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
