@@ -1,0 +1,59 @@
+
+.texto{
+    font-size: $texto3;
+    color: $color1;
+    font-family: $tipo1;
+    text-align: $posicion1;
+    text-decoration: $decoration;  
+}
+
+.textotitulos{
+    font-size: $texto4;
+    color: $color1;
+    font-family: $tipo1;
+    text-align: $posicion2;
+    text-decoration: $decoration;
+}
+
+h2{
+    color: $color1;
+    font-size: $texto2;
+    text-align: $posicion2;
+    font-family: $tipo1;
+}
+
+header{
+    color: $color2;
+    font-size: $texto;
+    text-align: $posicion2;
+    font-family: $tipo2;
+}
+
+.textofooter1{
+    font-size: $texto3;
+    color: $color1;
+    font-family: $tipo1;
+    text-align: $posicion1;
+}
+
+// textos en media queries
+
+@media screen and (max-width: 414px){
+    
+   .textofooter{
+    font-size: $texto5;
+    color: $color1;
+    font-family: $tipo1;
+    text-align: $posicion1;
+   } 
+
+   .textofooter1{
+    display: none;
+   }
+};
+
+@media screen and (min-width: 415px) {
+    .textofooter{
+        display: none;
+    }
+}

@@ -1,0 +1,211 @@
+
+//grids para la seccion del idex
+.fondoCaja{
+    background-color: rgba(27, 24, 24, 0.788);
+    display: grid;
+    grid-template-columns: $grid3;
+    grid-template-areas: 
+    "izquierda centro derecha"
+    "izquierda centro derecha";
+    gap: 13px;
+}
+
+.boxIzquierda{
+    grid-area: izquierda;
+}
+
+.boxCentro{
+    grid-area: centro;
+}
+
+.boxDerecha{
+    grid-area: derecha;
+}
+
+section{
+    margin: 5% 1.5%;
+    padding: 1%;
+    border-radius: 4px;
+    div{
+        aside{
+            p{
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+//seccion de la pagina de personajes
+.estructurap{
+    display: grid;
+    grid-template-columns: $grid1;
+    margin-left: 100px;
+    justify-content: space-around;
+    
+}
+
+.contenedorper{
+    width: 80%;
+    height: 82%;
+    background-color: rgb(27, 24, 24, 0.8);
+    padding: 5px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.contenedorper::-webkit-scrollbar{
+    width: 8px;
+}
+.contenedorper::-webkit-scrollbar-thumb{
+    background-color: rgb(10, 10, 10);
+    border-radius: 15px;
+}
+
+.contenedort1{
+    background-color: rgb(27, 24, 24, 0.8);
+    padding: 5px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+.contenedort1:hover{
+    transform: scale(1.1);
+}
+
+.contenedort2{
+    width: 38%;
+    height: 85%;
+    background-color: rgb(27, 24, 24, 0.8);
+    padding: 5px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction:column;
+    transition: all 1s; 
+}
+
+.contenedort2:hover{
+    transform: scale(1.1);
+}
+
+.contenedorpt1{
+    display: grid;
+    grid-template-columns: $grid2;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.contenedorpt2{
+    display: flex;
+    justify-content: center;
+}
+
+//contenedor de texto ppal de la pag temporadas
+.cajatempo{
+    background-color: rgb(27, 24, 24, 0.8);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 12px; 
+    
+}
+
+//contenedores con "flex" de la pag ovas
+.contenedor1o{
+    display: flex;
+    background-color: rgba(27, 24, 24, 0.788);
+    padding: 5px;
+    flex-direction: row;
+    gap: 5px;
+    border-radius: 15px;
+}
+
+.contenedor2o{
+    display: flex;
+    background-color: rgba(27, 24, 24, 0.788);
+    padding: 5px;
+    flex-direction: row-reverse;
+    gap: 5px;
+    border-radius: 15px;
+}
+
+.contenedor0{
+    background-color: rgba(27, 24, 24, 0.788);
+    border-radius: 15px;
+    padding: 7px;
+    width: 80%;
+    margin-left: 8%;
+}
+
+
+
+//secciones en media queries
+@media screen and (max-width: 414px) {
+    
+    //caja del index
+    .fondoCaja{
+        width: 98% ;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin: 1.5% 0%;
+        padding: 1% 1%; 
+    }
+
+    .boxDerecha{
+        display: none;
+    }
+
+    //contenedor de personajes
+    .estructurap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 5px;
+        margin-left: 7px;
+        gap: 15px;
+    }
+
+    .contenedorper{
+        height: 300px;
+        width: 180px;
+    }
+
+    //contenedor de temporadas
+    .contenedorpt1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedorpt2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedort2{
+        width: 100%;
+        height: 100%;
+    }
+
+    //contenedor ovas
+    .contenedor1o{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor2o{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,53 @@
+div{
+  nav{  
+    gap: 50px;
+    margin-right: 7%;
+    margin-top: 4%;
+     a{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        font-family: oswald;
+        border: 2px solid white;
+        border-radius: 4px;
+        margin: 10px;
+        padding: 1px 2px;
+            &:hover{
+            background-color: rgba(9, 38, 100, 0.733)}
+        }
+    }
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+//barra de navegacion con media queries
+
+@media screen and (max-width: 414px) {
+    
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div{
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 30%;
+            margin-left: 30%;
+            margin-top: 2px;
+            gap: 1px;
+            a{
+                display: flex;
+                justify-content: center;    
+            }  
+        }
+    }
+}
+

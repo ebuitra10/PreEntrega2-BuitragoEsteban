@@ -1,0 +1,23 @@
+{
+  "name": "projectcoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebuitra10/Projectcoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebuitra10/Projectcoder/issues"
+  },
+  "homepage": "https://github.com/ebuitra10/Projectcoder#readme",
+  "dependencies": {
+    "g": "^2.0.1",
+    "sass": "^1.56.0"
+  }
+}
