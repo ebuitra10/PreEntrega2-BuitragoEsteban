@@ -22,11 +22,22 @@ h2{
     font-family: $tipo1;
 }
 
-header{
-    color: $color2;
-    font-size: $texto;
-    text-align: $posicion2;
-    font-family: $tipo2;
+article{
+    h1{
+        color: $color2;
+        font-size: $texto;
+        text-align: $posicion2;
+        font-family: $tipo2;  
+    }
+}
+
+article{
+    h3{
+        color: $color2;
+        font-size: $texto;
+        text-align: $posicion2;
+        font-family: $tipo2;  
+    }
 }
 
 .textofooter1{

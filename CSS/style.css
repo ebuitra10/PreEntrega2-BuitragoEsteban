@@ -91,7 +91,7 @@ section div aside a {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 414px) {
   .contenedorft {
     display: flex;
     flex-direction: column;
@@ -585,7 +585,14 @@ h2 {
   font-family: oswald;
 }
 
-header {
+article h1 {
+  color: rgba(240, 231, 231, 0.89);
+  font-size: 45px;
+  text-align: center;
+  font-family: Rubik Dirt;
+}
+
+article h3 {
   color: rgba(240, 231, 231, 0.89);
   font-size: 45px;
   text-align: center;
