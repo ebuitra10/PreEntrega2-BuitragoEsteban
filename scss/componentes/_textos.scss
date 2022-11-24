@@ -15,6 +15,14 @@
     text-decoration: $decoration;
 }
 
+.textocopy{
+    font-size: $texto3;
+    color: $color1;
+    font-family: $tipo1;
+    text-align: $posicion2;
+    text-decoration: $decoration;
+}
+
 h2{
     color: $color1;
     font-size: $texto2;
@@ -61,6 +69,14 @@ article{
    .textofooter1{
     display: none;
    }
+
+   .textocopy{
+    font-size: $texto5;
+    color: $color1;
+    font-family: $tipo1;
+    text-align: $posicion1;
+    text-decoration: $decoration;
+}
 };
 
 @media screen and (min-width: 415px) {

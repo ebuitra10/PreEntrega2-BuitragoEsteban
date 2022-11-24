@@ -1,5 +1,5 @@
 
-//grids para la seccion del idex
+//grids para la seccion del index
 .fondoCaja{
     background-color: rgba(27, 24, 24, 0.788);
     display: grid;
@@ -8,6 +8,16 @@
     "izquierda centro derecha"
     "izquierda centro derecha";
     gap: 13px;
+    margin: 5% 1.5%;
+    padding: 1%;
+    border-radius: 4px;
+}
+
+.contenedormacro{
+    margin-top: 5%;
+    margin-right: 3%;
+    padding: 1%;
+    border-radius: 4px;
 }
 
 .boxIzquierda{
@@ -22,10 +32,14 @@
     grid-area: derecha;
 }
 
-section{
+.section {
     margin: 5% 1.5%;
     padding: 1%;
     border-radius: 4px;
+}
+
+section{
+
     div{
         aside{
             p{
@@ -143,6 +157,61 @@ section{
     margin-left: 8%;
 }
 
+@media screen and (max-width: 768px){
+   
+    .fondoCaja{
+        grid-template-columns: $grid4;
+        grid-template-areas: 
+        "izquierda centro"
+        "izquierda centro";
+        gap: 13px;
+        width: 95%;
+        
+        
+    }
+
+    .boxIzquierda{
+        grid-area: izquierda;
+    }
+    
+    .boxCentro{
+        grid-area: centro;
+        height: 455px;
+        overflow: scroll;
+    }
+
+    .boxDerecha{
+        grid-area: derecha;
+        display: none;
+    }
+
+    .tenor-gif-embed{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedorper{
+        width: 200px;
+        height: 400px;
+        margin: 20px;
+    }
+
+    .estructurap{
+        display: grid;
+        grid-template-columns: $grid1;
+        margin-left: 5px;
+        justify-content: space-around;
+        
+    }
+
+    .contenedort1{
+        width: 320px;
+    }
+
+    .contenedort2{
+        width: 45%; 
+    }
+}
 
 
 //secciones en media queries
@@ -150,14 +219,14 @@ section{
     
     //caja del index
     .fondoCaja{
-        width: 98% ;
+        width: 98%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
         margin: 1.5% 0%;
-        padding: 1% 1%; 
+        padding: 1% 3%; 
     }
 
     .boxDerecha{
@@ -167,15 +236,23 @@ section{
     //contenedor de personajes
     .estructurap{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-right: 5px;
-        margin-left: 7px;
-        gap: 15px;
+        grid-template-columns: $grid5;
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 0px;
     }
 
     .contenedorper{
-        height: 300px;
+        height: 270px;
         width: 180px;
+    }
+
+
+    .section {
+        margin-left: 30px;
+        margin-right: 20px;
+        padding: 0.5%;
+        border-radius: 4px;
     }
 
     //contenedor de temporadas
@@ -183,6 +260,7 @@ section{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     .contenedorpt2{
@@ -194,6 +272,13 @@ section{
         width: 100%;
         height: 100%;
     }
+
+    .contenedort1{
+        width: 100%;
+        height: 100%;
+    }
+
+
 
     //contenedor ovas
     .contenedor1o{
@@ -209,3 +294,6 @@ section{
     }
 
 }
+
+
+
